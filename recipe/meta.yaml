@@ -1,18 +1,18 @@
 {% set name = "pandas-datapackage-reader" %}
-{% set version = "0.13.1" %}
+{% set version = "0.14.0" %}
 
 package:
-  name: "{{ name|lower }}"
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bdb9e853a080e1c2df718b9ae603e84908bcff6abf92ce8e3643db0f482c744c
+  sha256: a13678e0926ef376e7384c8bf5f884c91398e9f4f723347775863fd2496f3ef1
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
   host:
@@ -27,8 +27,7 @@ test:
   imports:
     - pandas_datapackage_reader
 
-  commands:
-    python -c "import pandas_datapackage_reader; assert pandas_datapackage_reader.__version__ == '{{ version }}'"
+  commands: python -c "import pandas_datapackage_reader; assert pandas_datapackage_reader.__version__ == '{{ version }}'"
 
 about:
   home: https://github.com/rgieseke/pandas-datapackage-reader

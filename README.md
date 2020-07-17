@@ -5,7 +5,7 @@ Home: https://github.com/rgieseke/pandas-datapackage-reader
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Data Package reader for Pandas
 

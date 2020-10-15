@@ -5,11 +5,13 @@ Home: https://github.com/rgieseke/pandas-datapackage-reader
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pandas-datapackage-reader-feedstock/blob/master/LICENSE.txt)
 
 Summary: Data Package reader for Pandas
 
+Development: https://github.com/rgieseke/pandas-datapackage-reader
 
+Documentation: https://github.com/rgieseke/pandas-datapackage-reader/blob/master/README.md
 
 Current build status
 ====================

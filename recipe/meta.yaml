@@ -1,5 +1,5 @@
 {% set name = "pandas-datapackage-reader" %}
-{% set version = "0.16.0" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6a164cb99210e9bef98b0d4c6fa1954e6c7b8b837f4ecf2db0d3c39440481bc1
+  sha256: 51a38f3e0596917178e2d7032088712c4aaabd029584c5914a533b4075b8bb06
 
 build:
   number: 0
